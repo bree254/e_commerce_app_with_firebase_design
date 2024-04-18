@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "459488155267",
+    "project_id": "bree-firebase",
+    "storage_bucket": "bree-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459488155267:android:b39ea83d7fb500ee1d6db6",
+        "android_client_info": {
+          "package_name": "com.example.e_commerce_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4XglODSzbLq1WztaxqxQ4OHpi1uQlldo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

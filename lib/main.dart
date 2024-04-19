@@ -2,30 +2,23 @@ import 'package:e_commerce_firebase/utils/theme.dart';
 import 'package:e_commerce_firebase/screens/splash/index.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'app.dart';
 import 'firebase_options.dart';
 
 void main() async {
+  // Todo : Add widgets Binding
+  // Todo : Init Local Storage
+  // Todo : Await Native Splash
+
+  // Todo : Initialize Firebase
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  // Todo : Initialize Authentication
+
+
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.system,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      home:  SplashScreen(),
-    );
-  }
-}

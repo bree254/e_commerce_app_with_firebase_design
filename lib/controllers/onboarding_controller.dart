@@ -1,3 +1,4 @@
+import 'package:e_commerce_firebase/screens/login/index.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -19,7 +20,7 @@ class OnBoardingController extends GetxController {
 
   void nextPage() {
     if(currentPageIndex.value == 2){
-    //   Get.to ();
+     Get.offAll(LoginScreen());
     }else {
       int page = currentPageIndex.value +1;
       pageController.jumpToPage(page);

@@ -2,10 +2,10 @@ import 'package:e_commerce_firebase/common/styles/spacing_styles.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/constants/text_strings.dart';
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
-import 'package:e_commerce_firebase/widgets/form_divider.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/form_divider.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/social_buttons.dart';
 import 'package:e_commerce_firebase/widgets/login_widgets/login_form.dart';
 import 'package:e_commerce_firebase/widgets/login_widgets/login_header.dart';
-import 'package:e_commerce_firebase/widgets/social_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

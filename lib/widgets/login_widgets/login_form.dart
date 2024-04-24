@@ -1,3 +1,4 @@
+import 'package:e_commerce_firebase/screens/main_page/index.dart';
 import 'package:e_commerce_firebase/screens/password_configuration/forget_password.dart';
 import 'package:e_commerce_firebase/screens/sign_up/index.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
@@ -62,7 +63,9 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: (){},
+                  onPressed: (){
+                    Get.to(() => MainPage());
+                  },
                   child: Text(TTexts.signIn)),
             ),
             SizedBox(height: TSizes.spaceBtwSections,),

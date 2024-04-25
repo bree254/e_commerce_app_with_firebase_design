@@ -1,4 +1,4 @@
-import 'package:e_commerce_firebase/widgets/custom_widgets/circular_container_widget.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/circular_container_widget.dart';
 import 'package:e_commerce_firebase/widgets/custom_widgets/curved_edges_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';

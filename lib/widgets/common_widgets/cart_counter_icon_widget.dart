@@ -4,9 +4,11 @@ import 'package:e_commerce_firebase/utils/constants/colors.dart';
 
 class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({
-    super.key, required this.iconColor, required this.onPressed,
+    super.key,
+    this.iconColor,
+    required this.onPressed,
   });
-  final Color  iconColor;
+  final Color?  iconColor;
   final VoidCallback onPressed;
 
   @override

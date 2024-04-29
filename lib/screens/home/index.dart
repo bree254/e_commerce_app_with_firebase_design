@@ -5,6 +5,7 @@ import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/constants/text_strings.dart';
 import 'package:e_commerce_firebase/utils/device/device_utility.dart';
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/grid_layout_widget.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/image_container_rounded_widget.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/section_heading.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/cart_counter_icon_widget.dart';
@@ -78,9 +79,11 @@ class HomeScreen extends StatelessWidget {
                       TImages.promoBanner3,
                     ],
                   ),
-                  VerticalProductCardWidget(
+                  SizedBox(height: TSizes.spaceBtwSections,),
+                  GridLayoutWidget(
+                    itemCount: 6,
+                    itemBuilder: (BuildContext , int ) { return VerticalProductCardWidget(); },),
 
-                  ),
                 ],
               ),
             )
@@ -90,5 +93,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
 
 

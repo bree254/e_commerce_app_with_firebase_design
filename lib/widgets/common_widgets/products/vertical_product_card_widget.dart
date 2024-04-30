@@ -3,15 +3,16 @@ import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
-import 'package:e_commerce_firebase/widgets/common_widgets/product_price__text_widget.dart';
-import 'package:e_commerce_firebase/widgets/common_widgets/product_tile_text.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/products/product_price__text_widget.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/products/product_tile_text.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/text_widgets/brand_title_text_verified_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
-import 'circular_icon_widget.dart';
-import 'image_container_rounded_widget.dart';
-import 'my_rounded_container.dart';
+import '../icon_widgets/circular_icon_widget.dart';
+import '../image_widgets/image_container_rounded_edges_widget.dart';
+import '../container_widgets/container_with_rounded_border_widget.dart';
 
 class VerticalProductCardWidget extends StatelessWidget {
   const VerticalProductCardWidget({super.key});
@@ -86,12 +87,8 @@ class VerticalProductCardWidget extends StatelessWidget {
                     smallsize: true,
                   ),
                   SizedBox(height: TSizes.spaceBtwItems/2,),
-                  Row(
-                    children: [
-                      Text('Nike',overflow: TextOverflow.ellipsis,maxLines: 1,style: Theme.of(context).textTheme.labelMedium,),
-                      SizedBox(width: TSizes.xs,),
-                      Icon(Iconsax.verify5,color: myColors.primary,size: TSizes.iconXs,),
-                    ],
+                  BrandTitleTextVerifiedWidget(
+                    title: 'Nike',
                   ),
                   // Spacer(),
                   Row(
@@ -129,6 +126,8 @@ class VerticalProductCardWidget extends StatelessWidget {
       );
   }
 }
+
+
 
 
 

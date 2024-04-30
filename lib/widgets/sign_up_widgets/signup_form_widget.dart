@@ -2,7 +2,7 @@ import 'package:e_commerce_firebase/screens/verify/index.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/constants/text_strings.dart';
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
-import 'package:e_commerce_firebase/widgets/common_widgets/terms_and_conitions_widget.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/text_widgets/terms_and_conditions_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';

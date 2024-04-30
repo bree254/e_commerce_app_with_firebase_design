@@ -1,5 +1,4 @@
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
-import 'package:e_commerce_firebase/widgets/common_widgets/vertical_product_card_width.dart';
 import 'package:flutter/material.dart';
 class GridLayoutWidget extends StatelessWidget {
   const GridLayoutWidget({

@@ -4,7 +4,7 @@ class SectionHeading extends StatelessWidget {
   const SectionHeading({
     super.key,
     this.textColor,
-    required this.showActionButton,
+    this.showActionButton =true,
     required this.title,
     this.buttonTitle = 'View all',
     this.onPressed,
@@ -17,6 +17,7 @@ class SectionHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           title,

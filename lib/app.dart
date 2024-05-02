@@ -1,6 +1,4 @@
 import 'package:e_commerce_firebase/screens/onboard/index.dart';
-import 'package:e_commerce_firebase/screens/splash/index.dart';
-import 'package:e_commerce_firebase/utils/constants/text_strings.dart';
 import 'package:e_commerce_firebase/utils/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';

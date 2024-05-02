@@ -41,11 +41,11 @@ class OnBoardingScreen extends StatelessWidget {
             ],
           ),
           //skip button
-          OnBoardingSkip(),
+          const OnBoardingSkip(),
           //dot navigation button
-          OnBoardingDot(),
+          const OnBoardingDot(),
           //circular button
-          OnBoarding_circular_button()
+          const OnBoarding_circular_button()
         ],
        
       ),

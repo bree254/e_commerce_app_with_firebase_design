@@ -26,10 +26,10 @@ class SearchContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+        padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
         child: Container(
           width: TDeviceUtils.getScreenWidth(context),
-          padding: EdgeInsets.all(TSizes.md),
+          padding: const EdgeInsets.all(TSizes.md),
           decoration: BoxDecoration(
             color: showBackground ? dark ? myColors.black: myColors.light: Colors.transparent,
             borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
@@ -38,7 +38,7 @@ class SearchContainer extends StatelessWidget {
           child: Row(
             children: [
               Icon(icon,color: myColors.darkerGrey,),
-              SizedBox(width: TSizes.spaceBtwItems,),
+              const SizedBox(width: TSizes.spaceBtwItems,),
               Text(text,style: Theme.of(context).textTheme.bodySmall,),
             ],
           ),

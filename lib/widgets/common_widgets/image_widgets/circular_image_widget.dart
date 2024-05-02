@@ -1,7 +1,6 @@
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
-import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 
 class CircularImageWidget extends StatelessWidget {

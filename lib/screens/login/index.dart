@@ -25,12 +25,12 @@ class LoginScreen extends StatelessWidget {
             
             children: [
               LoginHeader(dark: dark),
-              LoginForm(),
+              const LoginForm(),
               //divider
               FormDivider(dark: dark,dividerText:TTexts.orSignInWith.capitalize!),
-              SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: TSizes.spaceBtwSections,),
               //Footer
-              SocialButtons()
+              const SocialButtons()
 
             ],
           ),

@@ -14,7 +14,7 @@ class HomePrimaryHeaderContainer extends StatelessWidget {
     return CurvedEdgesWidget(
       child: Container(
         color: myColors.primary,
-        padding: EdgeInsets.all(0),
+        padding: const EdgeInsets.all(0),
         child: SizedBox(
           height: 400,
           child: Stack(

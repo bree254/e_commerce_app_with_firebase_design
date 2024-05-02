@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 class OnBoardingDot extends StatelessWidget {
-  OnBoardingDot({
+  const OnBoardingDot({
     super.key,
   });
 

@@ -17,9 +17,9 @@ class VerifyEmailAddress extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: (){
-                Get.offAll(LoginScreen());
+                Get.offAll(const LoginScreen());
               },
-              icon: Icon(CupertinoIcons.clear))
+              icon: const Icon(CupertinoIcons.clear))
         ],
       ),
       body: SingleChildScrollView(
@@ -31,17 +31,17 @@ class VerifyEmailAddress extends StatelessWidget {
               //   image
               Image(
                 width: THelperFunctions.screenWidth() *.6,
-                  image: AssetImage(TImages.deliveredEmailIllustration),
+                  image: const AssetImage(TImages.deliveredEmailIllustration),
               ),
-              SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: TSizes.spaceBtwSections,),
               //   title and subtitle
               Text(TTexts.confirmEmail,style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center,),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
               Text('support @brendawanjiru72@gmail.com',style: Theme.of(context).textTheme.labelLarge,textAlign: TextAlign.center,),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
               Text(TTexts.confirmEmailSubTitle,style: Theme.of(context).textTheme.labelMedium,textAlign: TextAlign.center,),
 
-              SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: TSizes.spaceBtwSections,),
               //   buttons
               
               SizedBox(
@@ -53,23 +53,23 @@ class VerifyEmailAddress extends StatelessWidget {
                         title: TTexts.yourAccountCreatedTitle,
                         subTitle: TTexts.yourAccountCreatedTitle,
                         onPressed: () {
-                          Get.to(() => LoginScreen());
+                          Get.to(() => const LoginScreen());
                         },
 
 
                       ));
                     },
-                    child: Text(TTexts.tContinue),
+                    child: const Text(TTexts.tContinue),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwItems,
               ),
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
                   onPressed: (){},
-                  child: Text(TTexts.resendEmail),
+                  child: const Text(TTexts.resendEmail),
                 ),
               ),
             ],

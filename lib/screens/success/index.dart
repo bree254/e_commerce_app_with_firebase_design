@@ -1,11 +1,8 @@
-import 'package:e_commerce_firebase/screens/login/index.dart';
 import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/constants/text_strings.dart';
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({
@@ -30,10 +27,10 @@ class SuccessScreen extends StatelessWidget {
             children: [
               //   image
               Image(
-                image: AssetImage(TImages.staticSuccessIllustration),
+                image: const AssetImage(TImages.staticSuccessIllustration),
                 width: THelperFunctions.screenWidth() * .6,
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwSections,
               ),
               //   title and subtitle
@@ -42,7 +39,7 @@ class SuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwItems,
               ),
               Text(
@@ -51,7 +48,7 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
 
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwSections,
               ),
               //   buttons
@@ -60,7 +57,7 @@ class SuccessScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: onPressed,
-                  child: Text(TTexts.tContinue),
+                  child: const Text(TTexts.tContinue),
                 ),
               ),
             ],

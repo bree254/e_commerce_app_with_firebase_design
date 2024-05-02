@@ -1,5 +1,3 @@
-import 'package:e_commerce_firebase/utils/theme.dart';
-import 'package:e_commerce_firebase/screens/splash/index.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'app.dart';

@@ -21,23 +21,23 @@ class LoginForm extends StatelessWidget {
           children: [
             //Email
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon:Icon(Iconsax.direct_right),
                 labelText: TTexts.email,
               ),
             ),
-            SizedBox(height: TSizes.spaceBtwInputFields,),
+            const SizedBox(height: TSizes.spaceBtwInputFields,),
 
             //Password
 
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon:Icon(Iconsax.password_check),
                 suffixIcon: Icon(Iconsax.eye_slash),
                 labelText: TTexts.password,
               ),
             ),
-            SizedBox(height: TSizes.spaceBtwInputFields,),
+            const SizedBox(height: TSizes.spaceBtwInputFields,),
 
             //Remember me & forget password
             Row(
@@ -46,38 +46,38 @@ class LoginForm extends StatelessWidget {
                 Row(
                   children: [
                     Checkbox(value: true, onChanged: (value){}),
-                    Text(TTexts.rememberMe),
+                    const Text(TTexts.rememberMe),
                   ],
                 ),
                 TextButton(
                   onPressed: (){
-                    Get.to(()=> ForgetPassword());
+                    Get.to(()=> const ForgetPassword());
                   },
-                  child: Text(TTexts.forgetPassword),
+                  child: const Text(TTexts.forgetPassword),
                 ),
 
               ],
             ),
 
-            SizedBox(height: TSizes.spaceBtwSections,),
+            const SizedBox(height: TSizes.spaceBtwSections,),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                   onPressed: (){
                     Get.to(() => MainPage());
                   },
-                  child: Text(TTexts.signIn)),
+                  child: const Text(TTexts.signIn)),
             ),
-            SizedBox(height: TSizes.spaceBtwSections,),
+            const SizedBox(height: TSizes.spaceBtwSections,),
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
                   onPressed: (){
-                    Get.to(() => SignUpScreen());
+                    Get.to(() => const SignUpScreen());
                   },
-                  child: Text(TTexts.createAccount)),
+                  child: const Text(TTexts.createAccount)),
             ),
-            SizedBox(height: TSizes.spaceBtwSections,),
+            const SizedBox(height: TSizes.spaceBtwSections,),
 
           ],
         ),

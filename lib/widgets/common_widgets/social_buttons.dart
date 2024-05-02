@@ -22,14 +22,14 @@ class SocialButtons extends StatelessWidget {
               onPressed: (){
 
               },
-              icon: Image(
+              icon: const Image(
                 height: TSizes.iconMd,
                 width: TSizes.iconMd,
                 image: AssetImage(TImages.google),
               )
           ),
         ),
-        SizedBox(width: TSizes.spaceBtwItems,),
+        const SizedBox(width: TSizes.spaceBtwItems,),
         Container(
           decoration: BoxDecoration(
             border: Border.all(color: myColors.grey),
@@ -39,14 +39,14 @@ class SocialButtons extends StatelessWidget {
               onPressed: (){
 
               },
-              icon: Image(
+              icon: const Image(
                 height: TSizes.iconMd,
                 width: TSizes.iconMd,
                 image: AssetImage(TImages.facebook),
               )
           ),
         ),
-        SizedBox(width: TSizes.spaceBtwItems,)
+        const SizedBox(width: TSizes.spaceBtwItems,)
       ],
     );
   }

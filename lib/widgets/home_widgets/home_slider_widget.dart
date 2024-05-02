@@ -1,13 +1,11 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_commerce_firebase/controllers/home_controller.dart';
-import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/container_widgets/circular_container_widget.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/image_widgets/image_container_rounded_edges_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 
 class HomeSliderWidget extends StatelessWidget {
    HomeSliderWidget({
@@ -31,7 +29,7 @@ class HomeSliderWidget extends StatelessWidget {
           ),
           items: banners.map((url) => RoundedEdgeImageContainer(imageUrl: url, backgroundColor: myColors.light)).toList(),
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.spaceBtwItems,
         ),
         Center(
@@ -42,7 +40,7 @@ class HomeSliderWidget extends StatelessWidget {
                 CircularContainer(
                   width: 20,
                   height: 4,
-                  margin: EdgeInsets.only(right: 10),
+                  margin: const EdgeInsets.only(right: 10),
                   backgroundColor: _controller.carouselCurrentindex.value == i ?myColors.primary :myColors.grey,
                 ),
             ],

@@ -25,7 +25,7 @@ class TermsandConditions extends StatelessWidget {
 
               }
           ),),
-        SizedBox(width: TSizes.spaceBtwItems,),
+        const SizedBox(width: TSizes.spaceBtwItems,),
         Text.rich(
             TextSpan(
                 children: [

@@ -3,7 +3,6 @@ import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});
@@ -13,28 +12,28 @@ class ForgetPassword extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //headings
 
             Text(TTexts.forgetPasswordTitle,style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center,),
-            SizedBox(height: TSizes.spaceBtwItems,),
+            const SizedBox(height: TSizes.spaceBtwItems,),
             Text(TTexts.forgetPasswordSubTitle,style: Theme.of(context).textTheme.labelMedium,textAlign: TextAlign.center,),
-            SizedBox(height: TSizes.spaceBtwSections*2,),
+            const SizedBox(height: TSizes.spaceBtwSections*2,),
 
           //   textfield
             TextFormField(
-              decoration: InputDecoration(labelText: TTexts.email,prefixIcon: Icon(Iconsax.direct_right)),
+              decoration: const InputDecoration(labelText: TTexts.email,prefixIcon: Icon(Iconsax.direct_right)),
             ),
-            SizedBox(height: TSizes.spaceBtwSections,),
+            const SizedBox(height: TSizes.spaceBtwSections,),
             //submit
             SizedBox(
               width:double.infinity,
               child: ElevatedButton(onPressed: (){
-                Get.to(() => ResetPassword());
-              }, child: Text(TTexts.submit)),
+                Get.to(() => const ResetPassword());
+              }, child: const Text(TTexts.submit)),
             )
           ],
         ),

@@ -1,4 +1,5 @@
 import 'package:e_commerce_firebase/screens/home/index.dart';
+import 'package:e_commerce_firebase/screens/settings/index.dart';
 import 'package:e_commerce_firebase/screens/store/index.dart';
 import 'package:e_commerce_firebase/screens/wishlist/index.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
@@ -39,5 +40,5 @@ class MainPage extends StatelessWidget {
 class NavigationController extends GetxController{
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [const HomeScreen(),const StoreScreen(),const WishlistScreen(),Container(color: Colors.red),];
+  final screens = [const HomeScreen(),const StoreScreen(),const WishlistScreen(),SettingsScreen(),];
 }

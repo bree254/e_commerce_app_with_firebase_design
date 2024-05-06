@@ -1,8 +1,8 @@
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-class myRoundedContainerWidget extends StatelessWidget {
-  const myRoundedContainerWidget({
+class RoundedContainerWidget extends StatelessWidget {
+  const RoundedContainerWidget({
     super.key,
     this.width,
     this.height,

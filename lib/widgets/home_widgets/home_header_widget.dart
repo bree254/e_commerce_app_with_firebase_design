@@ -3,9 +3,11 @@ import 'package:e_commerce_firebase/widgets/custom_widgets/curved_edges_widget.d
 import 'package:flutter/material.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 
-class HomePrimaryHeaderContainer extends StatelessWidget {
-  const HomePrimaryHeaderContainer({
-    super.key, required this.child,
+class PrimaryHeaderContainer extends StatelessWidget {
+  const PrimaryHeaderContainer({
+    super.key,
+    required this.child,
+
   });
   final Widget  child;
 
@@ -15,9 +17,7 @@ class HomePrimaryHeaderContainer extends StatelessWidget {
       child: Container(
         color: myColors.primary,
         padding: const EdgeInsets.all(0),
-        child: SizedBox(
-          height: 400,
-          child: Stack(
+        child: Stack(
             children: [
               Positioned(
                 top: -150,
@@ -35,7 +35,7 @@ class HomePrimaryHeaderContainer extends StatelessWidget {
 
             ],
           ),
-        ),
+
       ),
     );
   }

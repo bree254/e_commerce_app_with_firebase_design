@@ -1,4 +1,5 @@
 import 'package:e_commerce_firebase/common/styles/shadows.dart';
+import 'package:e_commerce_firebase/screens/product_details/index.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
@@ -7,6 +8,7 @@ import 'package:e_commerce_firebase/widgets/common_widgets/products/product_pric
 import 'package:e_commerce_firebase/widgets/common_widgets/products/product_tile_text.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/text_widgets/brand_title_text_verified_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../icon_widgets/circular_icon_widget.dart';
 import '../image_widgets/image_container_rounded_edges_widget.dart';
@@ -21,6 +23,7 @@ class VerticalProductCardWidget extends StatelessWidget {
     return
       GestureDetector(
         onTap: (){
+          Get.to(() => ProductDetailsScreen());
 
         },
         child: Container(
@@ -33,7 +36,7 @@ class VerticalProductCardWidget extends StatelessWidget {
         ),
         child: Column(
           children: [
-            myRoundedContainerWidget(
+            RoundedContainerWidget(
               height: 180,
               padding: const EdgeInsets.all(TSizes.sm),
               backgroundColor: dark ? myColors.dark:myColors.light,
@@ -49,7 +52,7 @@ class VerticalProductCardWidget extends StatelessWidget {
 
                   Positioned(
                     top: 12,
-                    child: myRoundedContainerWidget(
+                    child: RoundedContainerWidget(
                      radius: TSizes.sm,
                       backgroundColor: myColors.secondary.withOpacity(0.8),
                       padding: const EdgeInsets.symmetric(horizontal: TSizes.sm,vertical: TSizes.xs),

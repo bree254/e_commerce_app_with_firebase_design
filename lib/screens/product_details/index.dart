@@ -1,9 +1,11 @@
+import 'package:e_commerce_firebase/screens/reviews/index.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/icon_widgets/circular_icon_widget.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/image_widgets/image_container_rounded_edges_widget.dart';
+import 'package:e_commerce_firebase/widgets/common_widgets/products/bottom_add_to_cart_widget.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/products/product_attributes_widgets.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/products/product_detail_image_slider_widget.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/products/product_meta_data_widget.dart';
@@ -13,6 +15,7 @@ import 'package:e_commerce_firebase/widgets/custom_widgets/curved_edges_widget.d
 import 'package:e_commerce_firebase/widgets/custom_widgets/custom_appbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -23,6 +26,7 @@ class ProductDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return  Scaffold(
+      bottomNavigationBar: BottomAddToCartWidget(),
       body: SingleChildScrollView(
 
         child: Column(
@@ -51,7 +55,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   SectionHeading(title: 'Description',showActionButton: false,),
                   SizedBox(height: TSizes.spaceBtwItems,),
                   ReadMoreText(
-                      'This is a product description for blue nike sleeve vest.There are things that can be added but i ',
+                      'This is a product description for blue nike sleeve vest.There are things that can be added but kdknafknkkknkk kkfkknkdKKFK nJNVNJ vjjsjj ',
                     trimLines: 2,
                     trimMode: TrimMode.Line,
                     trimCollapsedText: "Show more",
@@ -61,13 +65,20 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
 
                   //Reviews
+                  SizedBox(height: TSizes.spaceBtwItems,),
                   Divider(),
-                  SizedBox(height: TSizes.spaceBtwSections,),
+                  SizedBox(height: TSizes.spaceBtwItems,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SectionHeading(title: 'Reviews (199)',showActionButton: true,),
-                      IconButton(onPressed: (){}, icon: Icon(Iconsax.arrow_right_3,size: 18,),),
+                      IconButton(
+                        onPressed: (){
+                          Get.to(() => ProductReviewScreen());
+                        },
+                        icon: Icon(Iconsax.arrow_right_3,
+                          size: 18,
+                        ),),
                     ],
                   ),
                   SizedBox(height: TSizes.spaceBtwSections,),

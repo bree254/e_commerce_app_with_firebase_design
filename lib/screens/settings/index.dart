@@ -1,3 +1,4 @@
+import 'package:e_commerce_firebase/screens/addresses/index.dart';
 import 'package:e_commerce_firebase/screens/profile/index.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
@@ -48,7 +49,7 @@ class SettingsScreen extends StatelessWidget {
                   ),
                   SizedBox(height: TSizes.spaceBtwItems,),
 
-                  SettingsmenuTileWidget(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set Shopping delevery adress'),
+                  SettingsmenuTileWidget(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set Shopping delevery adress',onTap: (){Get.to(() => UserAddressScreen());},),
                   SettingsmenuTileWidget(icon: Iconsax.shopping_cart, title: 'My cart', subTitle: 'Add,remove products and move to checkout'),
                   SettingsmenuTileWidget(icon: Iconsax.bag_tick, title: 'My Orders', subTitle: 'In-progress and completed orders'),
                   SettingsmenuTileWidget(icon: Iconsax.bank, title: 'Bank Account', subTitle: 'Withdraw balance to registered bank account'),

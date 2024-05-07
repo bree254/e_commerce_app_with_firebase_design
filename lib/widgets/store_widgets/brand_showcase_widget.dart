@@ -13,7 +13,7 @@ class BrandShowCaseWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return myRoundedContainerWidget(
+    return RoundedContainerWidget(
       showBorder: true,
       borderColor: myColors.darkGrey,
       backgroundColor: Colors.transparent,
@@ -31,7 +31,7 @@ class BrandShowCaseWidget extends StatelessWidget {
   }
   Widget brandTopProductImageWidget(String image,context){
     return Expanded(
-      child: myRoundedContainerWidget(
+      child: RoundedContainerWidget(
         height: 100,
         backgroundColor: THelperFunctions.isDarkMode(context) ?myColors.darkerGrey:myColors.light,
         margin: const EdgeInsets.only(right: TSizes.sm),

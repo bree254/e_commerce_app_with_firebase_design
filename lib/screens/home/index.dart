@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            const HomePrimaryHeaderContainer(
+            const PrimaryHeaderContainer(
               child: Column(
                 children: [
                   HomeAppbarWidget(),
@@ -49,7 +49,8 @@ class HomeScreen extends StatelessWidget {
                         HomeCategoriesWidget(),
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(height: TSizes.spaceBtwSections,),
                 ],
               ),
             ),

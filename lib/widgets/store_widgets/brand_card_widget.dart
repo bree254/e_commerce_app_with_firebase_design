@@ -22,7 +22,7 @@ class BrandCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: myRoundedContainerWidget(
+      child: RoundedContainerWidget(
         padding: const EdgeInsets.all(TSizes.sm),
         showBorder: showBorder,
         borderColor: myColors.grey.withOpacity(0.8),

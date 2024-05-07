@@ -16,3 +16,16 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 # e_commerce_app_with_firebase_
 # e_commerce_app_with_firebase_
+
+    # in chip theme
+    # wrap chiptheme with a theme widget
+    
+    Theme(
+    data:Theme.of(context).copyWith(canvasColor:Colors.tranparent)
+    
+    )
+
+    # in product detail page
+    # in the scaffold add 
+    bottomNavigatorBar :BottomAddToCartWidget
+

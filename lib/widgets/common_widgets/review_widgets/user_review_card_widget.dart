@@ -6,7 +6,8 @@ import 'package:e_commerce_firebase/widgets/common_widgets/container_widgets/con
 import 'package:e_commerce_firebase/widgets/common_widgets/products/rating_indicator_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:readmore/readmore.dart';
+ import 'package:readmore/readmore.dart';
+
 class UserReviewCard extends StatelessWidget {
   const UserReviewCard({super.key});
 
@@ -33,7 +34,7 @@ class UserReviewCard extends StatelessWidget {
         SizedBox(width: TSizes.spaceBtwItems,),
         Row(
           children: [
-            RatingIndicatorWidget(rating: 4.5),
+            // RatingIndicatorWidget(rating: 4.5),
             SizedBox(width: TSizes.spaceBtwItems,),
             Text('01-Nov-2023',style: Theme.of(context).textTheme.bodyMedium,),
           ],

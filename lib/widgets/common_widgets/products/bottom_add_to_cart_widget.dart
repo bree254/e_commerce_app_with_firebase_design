@@ -21,11 +21,7 @@ class BottomAddToCartWidget extends StatelessWidget {
           topRight: Radius.circular(TSizes.cardRadiusLg),
         )
 
-          color: dark? myColors.darkerGrey : myColors.light,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(TSizes.cardRadiusLg),
-            topRight: Radius.circular(TSizes.cardRadiusLg),
-          )
+
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -40,11 +36,6 @@ class BottomAddToCartWidget extends StatelessWidget {
                 height: 40,
                 color: myColors.darkGrey,
 
-                icon: Iconsax.minus,
-                backgroundColor: myColors.darkGrey,
-                width: 40,
-                height: 40,
-                color: myColors.darkerGrey,
 
               ),
               SizedBox(width: TSizes.spaceBtwItems,),

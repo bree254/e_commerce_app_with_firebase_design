@@ -24,14 +24,14 @@ class ProductMetaDataWidget extends StatelessWidget {
             RoundedContainerWidget(
               radius: TSizes.sm,
               backgroundColor: myColors.secondary.withOpacity(0.8),
-              padding: EdgeInsets.symmetric(horizontal: TSizes.sm,vertical: TSizes.xs),
+              padding: const EdgeInsets.symmetric(horizontal: TSizes.sm,vertical: TSizes.xs),
               child: Text(
                   '25%',
                   style: Theme.of(context).textTheme.labelLarge!.apply(color: myColors.black),
 
             ),
             ),
-            SizedBox(width: TSizes.spaceBtwItems,),
+            const SizedBox(width: TSizes.spaceBtwItems,),
 
             //Price
             Text(
@@ -39,28 +39,28 @@ class ProductMetaDataWidget extends StatelessWidget {
               style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough),
 
             ),
-            SizedBox(height: TSizes.spaceBtwItems,),
-            ProductPriceTextWidget(price: '175',isLarge: true,),
+            const SizedBox(height: TSizes.spaceBtwItems,),
+            const ProductPriceTextWidget(price: '175',isLarge: true,),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems /1.5),
+        const SizedBox(height: TSizes.spaceBtwItems /1.5),
 
         // Title
-        ProductTileText(title: 'Green Nike Sports Shirt'),
-        SizedBox(height: TSizes.spaceBtwItems /1.5),
+        const ProductTileText(title: 'Green Nike Sports Shirt'),
+        const SizedBox(height: TSizes.spaceBtwItems /1.5),
 
         // Stock
         Row(
           children: [
-            ProductTileText(title: 'Status'),
-            SizedBox(width: TSizes.spaceBtwItems /1.5),
+            const ProductTileText(title: 'Status'),
+            const SizedBox(width: TSizes.spaceBtwItems /1.5),
 
             Text(
               'In stock',
               style: Theme.of(context).textTheme.titleMedium,
 
             ),
-            SizedBox(height: TSizes.spaceBtwItems /1.5),
+            const SizedBox(height: TSizes.spaceBtwItems /1.5),
           ],
         ),
 
@@ -73,7 +73,7 @@ class ProductMetaDataWidget extends StatelessWidget {
               height: 32,
               overlayColor: darkMode ? myColors.white:myColors.black,
             ),
-            BrandTitleTextVerifiedWidget(
+            const BrandTitleTextVerifiedWidget(
                 title: 'Nike',
               brandTextSize: TextSizes.medium,
             ),

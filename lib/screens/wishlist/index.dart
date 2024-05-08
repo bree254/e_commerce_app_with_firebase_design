@@ -1,4 +1,3 @@
-import 'package:e_commerce_firebase/controllers/home_controller.dart';
 import 'package:e_commerce_firebase/screens/main_page/index.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/icon_widgets/circular_icon_widget.dart';
@@ -24,13 +23,13 @@ class WishlistScreen extends StatelessWidget {
       ]
     ),
       body: SingleChildScrollView(
-        child: Padding(padding: EdgeInsets.all(TSizes.defaultSpace),
+        child: Padding(padding: const EdgeInsets.all(TSizes.defaultSpace),
         child: Column(
             children: [
               GridLayoutWidget(
                   itemCount: 6,
                   itemBuilder: (_,index){
-                    return VerticalProductCardWidget(
+                    return const VerticalProductCardWidget(
 
                     );
                   })

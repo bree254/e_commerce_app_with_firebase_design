@@ -18,15 +18,15 @@ class ProductAttributesScreen extends StatelessWidget {
       children: [
         // Selected Attribute pricing and description
         RoundedContainerWidget(
-          padding: EdgeInsets.all(TSizes.sm),
+          padding: const EdgeInsets.all(TSizes.sm),
           backgroundColor: dark ? myColors.darkerGrey :myColors.grey,
           child: Column(
             children: [
               //Title ,Price and Stock Status
               Row(
                 children: [
-                  SectionHeading(title: 'Variation',showActionButton: false,),
-                  SizedBox(width: TSizes.spaceBtwItems,),
+                  const SectionHeading(title: 'Variation',showActionButton: false,),
+                  const SizedBox(width: TSizes.spaceBtwItems,),
                   
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,15 +35,15 @@ class ProductAttributesScreen extends StatelessWidget {
                       Row(
                         children: [
                           //Actual prize
-                          ProductTileText(title: 'Price : ',smallsize: true,),
+                          const ProductTileText(title: 'Price : ',smallsize: true,),
                           Text(
                               '\$25',
                             style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough),
                           ),
-                          SizedBox(width: TSizes.spaceBtwItems,),
+                          const SizedBox(width: TSizes.spaceBtwItems,),
 
                           //Sale Price
-                          ProductPriceTextWidget(
+                          const ProductPriceTextWidget(
                               price: '20')
                           //sale price
                         ],
@@ -51,7 +51,7 @@ class ProductAttributesScreen extends StatelessWidget {
                       //Stock
                       Row(
                         children: [
-                       ProductTileText(title: 'Stock : ',smallsize: true,),
+                       const ProductTileText(title: 'Stock : ',smallsize: true,),
                           Text('In Stock',style: Theme.of(context).textTheme.titleMedium,)
                         ],
                       ),
@@ -61,7 +61,7 @@ class ProductAttributesScreen extends StatelessWidget {
                 ],
               ),
               //Variation Description
-              ProductTileText(
+              const ProductTileText(
                 title: 'This is the Description of the product and it can go up to max 4 lines',
                 smallsize: true,
                 maxLines: 4,
@@ -69,14 +69,14 @@ class ProductAttributesScreen extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: TSizes.spaceBtwItems,),
+        const SizedBox(height: TSizes.spaceBtwItems,),
 
         //Attributes
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SectionHeading(title: 'Colors',showActionButton: false,),
-            SizedBox(height: TSizes.spaceBtwItems/2,),
+            const SectionHeading(title: 'Colors',showActionButton: false,),
+            const SizedBox(height: TSizes.spaceBtwItems/2,),
             Wrap(
               spacing: 8,
               children: [
@@ -93,8 +93,8 @@ class ProductAttributesScreen extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SectionHeading(title: 'Size',showActionButton: false,),
-            SizedBox(height: TSizes.spaceBtwItems/2,),
+            const SectionHeading(title: 'Size',showActionButton: false,),
+            const SizedBox(height: TSizes.spaceBtwItems/2,),
             Wrap(
               spacing: 8,
               children: [

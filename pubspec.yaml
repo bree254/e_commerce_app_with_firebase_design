@@ -52,6 +52,7 @@ dependencies:
   flutter_rating_bar: ^4.0.1
 
 
+  http: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

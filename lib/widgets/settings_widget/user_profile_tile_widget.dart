@@ -12,7 +12,7 @@ final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircularImageWidget(
+      leading: const CircularImageWidget(
         image: TImages.user,
         width: 50,
         height: 50,
@@ -28,7 +28,7 @@ final VoidCallback onPressed;
       ),
       trailing: IconButton(
           onPressed:onPressed,
-          icon: Icon(Iconsax.edit,color: myColors.white,)),
+          icon: const Icon(Iconsax.edit,color: myColors.white,)),
     );
   }
 }

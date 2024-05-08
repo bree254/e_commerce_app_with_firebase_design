@@ -21,22 +21,23 @@ class CartItemWidget extends StatelessWidget {
           imageUrl: TImages.productImage1,
           width: 60,
           height: 60,
-          padding: EdgeInsets.all(TSizes.sm),
+          padding: const EdgeInsets.all(TSizes.sm),
           backgroundColor: THelperFunctions.isDarkMode(context) ? myColors.darkerGrey : myColors.light,
         ),
 
-        SizedBox(height: TSizes.spaceBtwItems,),
+        const SizedBox(width: TSizes.spaceBtwItems,),
 
         //title,price and Size
 
         Expanded(
           child: Column(
             mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              BrandTitleTextVerifiedWidget(
+              const BrandTitleTextVerifiedWidget(
                   title: 'Nike'
               ),
-              Flexible(
+              const Flexible(
                 child: ProductTileText(
                     title: 'Black Sports shoes'),
               ),

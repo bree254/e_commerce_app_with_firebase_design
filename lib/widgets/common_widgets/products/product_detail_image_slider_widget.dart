@@ -25,10 +25,10 @@ class ProductDetailImageSliderWidget extends StatelessWidget {
         child: Stack(
           children: [
             // Main large image
-            SizedBox(
+            const SizedBox(
               height:400,
               child: Padding(
-                padding: const EdgeInsets.all(TSizes.productImageRadius * 2),
+                padding: EdgeInsets.all(TSizes.productImageRadius * 2),
                 child: Center(child: Image(image: AssetImage(TImages.productImage5))),
               ),
             ),
@@ -42,24 +42,24 @@ class ProductDetailImageSliderWidget extends StatelessWidget {
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   shrinkWrap: true,
-                  physics: AlwaysScrollableScrollPhysics(),
+                  physics: const AlwaysScrollableScrollPhysics(),
                   itemCount: 6,
                   separatorBuilder: (_,__){
-                    return SizedBox(width: TSizes.spaceBtwItems,);
+                    return const SizedBox(width: TSizes.spaceBtwItems,);
                   },
                   itemBuilder: (_,index){
                     return RoundedEdgeImageContainer(
                       width: 80,
                       backgroundColor: dark ? myColors.dark :myColors.white,
                       border: Border.all(color: myColors.grey),
-                      padding: EdgeInsets.all(TSizes.sm),
+                      padding: const EdgeInsets.all(TSizes.sm),
                       imageUrl: TImages.productImage5,
                     );
                   },
                 ),
               ),
             ),
-            CustomAppBar(
+            const CustomAppBar(
               showBackArrow: true,
               actions: [
                 CircularIcon(icon: Iconsax.heart5,color: Colors.red,)

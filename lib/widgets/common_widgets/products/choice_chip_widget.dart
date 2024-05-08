@@ -20,14 +20,14 @@ class ChoiceChipWidget extends StatelessWidget {
     return Theme(
       data: Theme.of(context).copyWith(canvasColor: Colors.transparent),
       child: ChoiceChip(
-        label: isColor ? SizedBox() : Text(text),
+        label: isColor ? const SizedBox() : Text(text),
         selected: selected,
         onSelected: onSelected,
         labelStyle: TextStyle(color: selected ? myColors.white :null,),
         avatar: isColor ? CircularContainer(width: 50, height: 50, backgroundColor: THelperFunctions.getColor(text)!):null,
-        labelPadding: isColor ? EdgeInsets.all(0):null,
-        padding:EdgeInsets.all(0) ,
-        shape: isColor ? CircleBorder() :null,
+        labelPadding: isColor ? const EdgeInsets.all(0):null,
+        padding:const EdgeInsets.all(0) ,
+        shape: isColor ? const CircleBorder() :null,
         backgroundColor:isColor ?  THelperFunctions.getColor(text)!: null,
 
 

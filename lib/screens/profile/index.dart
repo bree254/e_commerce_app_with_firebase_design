@@ -12,13 +12,13 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         showBackArrow: false,
         title: Text('Profile'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-            padding: EdgeInsets.all(TSizes.defaultSpace),
+            padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               // Profile Picture
@@ -27,26 +27,26 @@ class ProfileScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     //Profile Picture
-                    CircularImageWidget(image: TImages.user,width: 80,height: 80,),
-                    TextButton(onPressed: (){}, child: Text('Change Profile picture')),
+                    const CircularImageWidget(image: TImages.user,width: 80,height: 80,),
+                    TextButton(onPressed: (){}, child: const Text('Change Profile picture')),
 
                     //Details
-                    SizedBox(height: TSizes.spaceBtwItems /2,),
-                    Divider(),
-                    SizedBox(height: TSizes.spaceBtwItems),
+                    const SizedBox(height: TSizes.spaceBtwItems /2,),
+                    const Divider(),
+                    const SizedBox(height: TSizes.spaceBtwItems),
 
                     //Profile Information
-                    SectionHeading(title: 'Profile Information',showActionButton: false,),
-                    SizedBox(height: TSizes.spaceBtwItems),
+                    const SectionHeading(title: 'Profile Information',showActionButton: false,),
+                    const SizedBox(height: TSizes.spaceBtwItems),
                     ProfileMenuWidget(onPressed: () {  }, title: 'Name', value: 'Code with Magnolia Spruce',),
                     ProfileMenuWidget(onPressed: () {  }, title: 'UserName', value: 'Coding_with_bree',),
 
-                    Divider(),
-                    SizedBox(height: TSizes.spaceBtwItems),
+                    const Divider(),
+                    const SizedBox(height: TSizes.spaceBtwItems),
 
                     //Personal Information
-                    SectionHeading(title: 'Profile Information',showActionButton: false,),
-                    SizedBox(height: TSizes.spaceBtwItems),
+                    const SectionHeading(title: 'Profile Information',showActionButton: false,),
+                    const SizedBox(height: TSizes.spaceBtwItems),
 
                     ProfileMenuWidget(onPressed: () {  }, title: 'User id', value: '45689',icon: Iconsax.copy,),
                     ProfileMenuWidget(onPressed: () {  }, title: 'E-mail', value: 'Coding_with_bree',),
@@ -58,7 +58,7 @@ class ProfileScreen extends StatelessWidget {
                     Center(
                       child: TextButton(
                           onPressed: (){},
-                          child: Text('Close Account',style: TextStyle(color: Colors.red),)),
+                          child: const Text('Close Account',style: TextStyle(color: Colors.red),)),
                     )
                   ],
                 ),

@@ -5,7 +5,6 @@ import 'package:e_commerce_firebase/widgets/custom_widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class HomeAppbarWidget extends StatelessWidget {
   const HomeAppbarWidget({
@@ -24,7 +23,7 @@ class HomeAppbarWidget extends StatelessWidget {
       ),
       actions: [
         CartCounterIcon(onPressed: () {
-          Get.to(() => CartScreen());
+          Get.to(() => const CartScreen());
         }, iconColor: myColors.white,),
       ],
     );

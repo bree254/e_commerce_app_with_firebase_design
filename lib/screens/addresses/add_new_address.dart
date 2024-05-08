@@ -8,45 +8,45 @@ class AddNewAddressScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         showBackArrow: true,
         title: Text('Add new Address'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Form(
               child: Column(
                 children: [
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         prefixIcon: Icon(Iconsax.user),
                     labelText: 'Name',
                     ),
                   ),
-                  SizedBox(height: TSizes.spaceBtwInputFields,),
+                  const SizedBox(height: TSizes.spaceBtwInputFields,),
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       prefixIcon: Icon(Iconsax.mobile),
                       labelText: 'Phone Number',
                     ),
                   ),
-                  SizedBox(height: TSizes.spaceBtwInputFields,),
+                  const SizedBox(height: TSizes.spaceBtwInputFields,),
 
                   Row(
                     children: [
                       Expanded(
                         child:TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Iconsax.building_31),
                           labelText: 'Street',
                         ),
                       ),
                       ),
-                      SizedBox(height: TSizes.spaceBtwInputFields,),
+                      const SizedBox(width: TSizes.spaceBtwInputFields,),
                       Expanded(
                         child:TextFormField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             prefixIcon: Icon(Iconsax.code),
                             labelText: 'Postal Code',
                           ),
@@ -55,22 +55,22 @@ class AddNewAddressScreen extends StatelessWidget {
                     ],
                   ),
 
-                  SizedBox(height: TSizes.spaceBtwInputFields,),
+                  const SizedBox(height: TSizes.spaceBtwInputFields,),
 
                   Row(
                     children: [
                       Expanded(
                         child:TextFormField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             prefixIcon: Icon(Iconsax.building),
                             labelText: 'City',
                           ),
                         ),
                       ),
-                      SizedBox(height: TSizes.spaceBtwInputFields,),
+                      const SizedBox(width: TSizes.spaceBtwInputFields,),
                       Expanded(
                         child:TextFormField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             prefixIcon: Icon(Iconsax.activity),
                             labelText: 'State',
                           ),
@@ -79,22 +79,22 @@ class AddNewAddressScreen extends StatelessWidget {
                     ],
                   ),
 
-                  SizedBox(height: TSizes.spaceBtwInputFields,),
+                  const SizedBox(height: TSizes.spaceBtwInputFields,),
 
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       prefixIcon: Icon(Iconsax.global),
                       labelText: 'Country',
                     ),
                   ),
 
-                  SizedBox(height: TSizes.spaceBtwInputFields,),
+                  const SizedBox(height: TSizes.spaceBtwInputFields,),
 
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
                         onPressed: (){},
-                        child: Text(
+                        child: const Text(
                             'Save',
                         ),
                     ),

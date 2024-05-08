@@ -1,9 +1,9 @@
 import 'package:e_commerce_firebase/screens/addresses/index.dart';
+import 'package:e_commerce_firebase/screens/cart/index.dart';
+import 'package:e_commerce_firebase/screens/orders/index.dart';
 import 'package:e_commerce_firebase/screens/profile/index.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
-import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
-import 'package:e_commerce_firebase/widgets/common_widgets/image_widgets/circular_image_widget.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/text_widgets/section_heading.dart';
 import 'package:e_commerce_firebase/widgets/custom_widgets/custom_appbar.dart';
 import 'package:e_commerce_firebase/widgets/home_widgets/home_header_widget.dart';
@@ -31,40 +31,40 @@ class SettingsScreen extends StatelessWidget {
                     ),
                   ),
                   //User Profile Card
-                  UserprofileTileWidget(onPressed: () { Get.to(() => ProfileScreen()) ;},),
-                  SizedBox(height: TSizes.spaceBtwSections,),
+                  UserprofileTileWidget(onPressed: () { Get.to(() => const ProfileScreen()) ;},),
+                  const SizedBox(height: TSizes.spaceBtwSections,),
 
                 ],
               ),
             ),
             //Body
             Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
+                padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
                   // Account Settings
-                  SectionHeading(
+                  const SectionHeading(
                       title: "Account Settings",
                     showActionButton: false,
                   ),
-                  SizedBox(height: TSizes.spaceBtwItems,),
+                  const SizedBox(height: TSizes.spaceBtwItems,),
 
-                  SettingsmenuTileWidget(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set Shopping delevery adress',onTap: (){Get.to(() => UserAddressScreen());},),
-                  SettingsmenuTileWidget(icon: Iconsax.shopping_cart, title: 'My cart', subTitle: 'Add,remove products and move to checkout'),
-                  SettingsmenuTileWidget(icon: Iconsax.bag_tick, title: 'My Orders', subTitle: 'In-progress and completed orders'),
-                  SettingsmenuTileWidget(icon: Iconsax.bank, title: 'Bank Account', subTitle: 'Withdraw balance to registered bank account'),
-                  SettingsmenuTileWidget(icon: Iconsax.discount_shape, title: 'My Coupons', subTitle: 'List of all discounted coupons'),
-                  SettingsmenuTileWidget(icon: Iconsax.notification, title: 'Notifications', subTitle: 'Set any kind of notification image'),
-                  SettingsmenuTileWidget(icon: Iconsax.security_card, title: 'Account privacy', subTitle: 'Manage data usage and connected accounts '),
+                  SettingsmenuTileWidget(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set Shopping delevery adress',onTap: (){Get.to(() => const UserAddressScreen());},),
+                  SettingsmenuTileWidget(icon: Iconsax.shopping_cart, title: 'My cart', subTitle: 'Add,remove products and move to checkout',onTap: (){Get.to(() => const CartScreen());},),
+                  SettingsmenuTileWidget(icon: Iconsax.bag_tick, title: 'My Orders', subTitle: 'In-progress and completed orders',onTap: (){Get.to(() => const OrderScreen());}),
+                  const SettingsmenuTileWidget(icon: Iconsax.bank, title: 'Bank Account', subTitle: 'Withdraw balance to registered bank account'),
+                  const SettingsmenuTileWidget(icon: Iconsax.discount_shape, title: 'My Coupons', subTitle: 'List of all discounted coupons'),
+                  const SettingsmenuTileWidget(icon: Iconsax.notification, title: 'Notifications', subTitle: 'Set any kind of notification image'),
+                  const SettingsmenuTileWidget(icon: Iconsax.security_card, title: 'Account privacy', subTitle: 'Manage data usage and connected accounts '),
 
                   //App Settings
-                  SizedBox(height: TSizes.spaceBtwItems,),
-                  SectionHeading(
+                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  const SectionHeading(
                     title: "App Settings",
                     showActionButton: false,
                   ),
-                  SizedBox(height: TSizes.spaceBtwItems,),
-                  SettingsmenuTileWidget(icon: Iconsax.document_upload, title: 'Load Data', subTitle: 'Upload DAta to your Firebase'),
+                  const SizedBox(height: TSizes.spaceBtwItems,),
+                  const SettingsmenuTileWidget(icon: Iconsax.document_upload, title: 'Load Data', subTitle: 'Upload DAta to your Firebase'),
                   SettingsmenuTileWidget(
                       icon: Iconsax.location,
                     title: 'GeoLocation',
@@ -85,12 +85,12 @@ class SettingsScreen extends StatelessWidget {
                   ),
                   //LOGOUT button
 
-                  SizedBox(height: TSizes.spaceBtwSections,),
+                  const SizedBox(height: TSizes.spaceBtwSections,),
                   SizedBox(
                     width: double.infinity,
-                    child: OutlinedButton(onPressed: (){}, child: Text('Logout')),
+                    child: OutlinedButton(onPressed: (){}, child: const Text('Logout')),
                   ),
-                  SizedBox(height: TSizes.spaceBtwSections *2.5),
+                  const SizedBox(height: TSizes.spaceBtwSections *2.5),
 
 
                 ],

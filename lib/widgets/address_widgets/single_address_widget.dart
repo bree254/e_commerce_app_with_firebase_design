@@ -2,7 +2,6 @@ import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/container_widgets/container_with_rounded_border_widget.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 class SingleAddressWidget extends StatelessWidget {
@@ -15,12 +14,12 @@ class SingleAddressWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark =THelperFunctions.isDarkMode(context);
     return  RoundedContainerWidget(
-      padding: EdgeInsets.all(TSizes.md),
+      padding: const EdgeInsets.all(TSizes.md),
       width: double.infinity,
       showBorder: true,
       backgroundColor: selectedAddress? myColors.primary.withOpacity(0.5): Colors.transparent,
       borderColor: selectedAddress ? Colors.transparent : dark ? myColors.darkerGrey : myColors.grey,
-      margin: EdgeInsets.only(bottom: TSizes.spaceBtwItems),
+      margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
       child: Stack(
         children: [
           Positioned(
@@ -45,16 +44,16 @@ class SingleAddressWidget extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.sm/2,
               ),
-              Text(
+              const Text(
                 '+254759633729',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
 
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.sm/2,
               ),
               Text(
@@ -64,7 +63,7 @@ class SingleAddressWidget extends StatelessWidget {
                 style: Theme.of(context).textTheme.titleLarge,
                 softWrap: true,
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.sm/2,
               )
             ],

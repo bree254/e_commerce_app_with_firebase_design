@@ -40,5 +40,5 @@ class MainPage extends StatelessWidget {
 class NavigationController extends GetxController{
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [const HomeScreen(),const StoreScreen(),const WishlistScreen(),SettingsScreen(),];
+  final screens = [const HomeScreen(),const StoreScreen(),const WishlistScreen(),const SettingsScreen(),];
 }

@@ -23,7 +23,7 @@ class VerticalProductCardWidget extends StatelessWidget {
     return
       GestureDetector(
         onTap: (){
-          Get.to(() => ProductDetailsScreen());
+          Get.to(() => const ProductDetailsScreen());
 
         },
         child: Container(

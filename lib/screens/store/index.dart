@@ -1,3 +1,4 @@
+import 'package:e_commerce_firebase/screens/all_brands/index.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
 import 'package:e_commerce_firebase/utils/helpers/helper_functions.dart';
@@ -10,6 +11,7 @@ import 'package:e_commerce_firebase/widgets/custom_widgets/custom_tabbar.dart';
 import 'package:e_commerce_firebase/widgets/store_widgets/brand_card_widget.dart';
 import 'package:e_commerce_firebase/widgets/store_widgets/category_tab_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
 
@@ -58,7 +60,9 @@ class StoreScreen extends StatelessWidget {
                       SectionHeading(
                         title: 'Featured Brands',
                         showActionButton: true,
-                        onPressed: (){},
+                        onPressed: (){
+                          Get.to(() => ViewAllBrandsScreen());
+                        },
                       ),
                       const SizedBox(height: TSizes.spaceBtwItems/1.5,),
                       GridLayoutWidget(

@@ -9,8 +9,10 @@ import 'package:e_commerce_firebase/widgets/common_widgets/image_widgets/image_c
 import 'package:e_commerce_firebase/widgets/common_widgets/products/product_price__text_widget.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/products/product_tile_text.dart';
 import 'package:e_commerce_firebase/widgets/common_widgets/text_widgets/brand_title_text_verified_widget.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+
 class HorizontalProductCardWidget extends StatelessWidget {
   const HorizontalProductCardWidget({super.key});
 
@@ -21,11 +23,8 @@ class HorizontalProductCardWidget extends StatelessWidget {
       width: 310,
       padding: EdgeInsets.all(1),
       decoration: BoxDecoration(
-        boxShadow: [
-          ShadowStyle.verticalProductShadow,
-        ],
         borderRadius: BorderRadius.circular(TSizes.productImageRadius),
-        color: dark ?myColors.darkerGrey : myColors.white,
+        color: dark ? myColors.darkerGrey : myColors.white,
       ),
       child: Row(
         children: [
@@ -39,31 +38,35 @@ class HorizontalProductCardWidget extends StatelessWidget {
                 //Thumb nail widget
                 SizedBox(
                   height: 120,
-                    width: 120,
-                    child: RoundedEdgeImageContainer(
-                      imageUrl: TImages.productImage1,applyImageRadius: true,
-                    ),),
+                  width: 120,
+                  child: RoundedEdgeImageContainer(
+                    imageUrl: TImages.productImage1,
+                    applyImageRadius: true,
+                  ),
+                ),
                 Positioned(
-                  top: 12,
+                  top: 10,
                   child: RoundedContainerWidget(
                     radius: TSizes.sm,
                     backgroundColor: myColors.secondary.withOpacity(0.8),
-                    padding: const EdgeInsets.symmetric(horizontal: TSizes.sm,vertical: TSizes.xs),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: TSizes.sm, vertical: TSizes.xs),
                     child: Text(
                       '25%',
-                      style: Theme.of(context).textTheme.labelLarge!.apply(color: myColors.black),
+                      style: Theme.of(context)
+                          .textTheme
+                          .labelLarge!
+                          .apply(color: myColors.black),
                     ),
-
                   ),
                 ),
                 //Favourite icon button
-                 Positioned(
+                Positioned(
                   top: 0,
                   right: 0,
                   child: CircularIcon(
                     icon: Iconsax.heart5,
                     color: Colors.red,
-
                   ),
                 )
               ],
@@ -73,30 +76,58 @@ class HorizontalProductCardWidget extends StatelessWidget {
           //details
           SizedBox(
             width: 172,
-            child: Column(
-              children: [
-                Padding(
-                    padding: EdgeInsets.only(top:TSizes.sm,left: TSizes.sm),
-                  child: Column(
+            child: Padding(
+              padding: EdgeInsets.only(top: TSizes.sm, left: TSizes.sm),
+              child: Column(
+                children: [
+                  Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ProductTileText(title: 'Green Nike Half Sleeves Shirt',smallsize: true,),
-                      SizedBox(height: TSizes.spaceBtwItems /2,),
-                      BrandTitleTextVerifiedWidget(title: 'Nike')
-                      
+                      ProductTileText(
+                        title: 'Green Nike Half Sleeves Shirt',
+                        smallsize: true,
+                      ),
+                      SizedBox(
+                        height: TSizes.spaceBtwItems / 2,
+                      ),
+                      BrandTitleTextVerifiedWidget(title: 'Nike'),
                     ],
                   ),
-                ),
-                Row(
-                  children: [
-                    ProductPriceTextWidget(price: '256.0'),
-                  ],
-                )
-              ],
+                  Spacer(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      //Pricing
+                      Flexible(child: ProductPriceTextWidget(price: '256.0')),
+
+                      //Add to cart
+                      Container(
+                        decoration: BoxDecoration(
+                          color: myColors.dark,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(TSizes.cardRadiusMd),
+                            bottomRight:
+                                Radius.circular(TSizes.productImageRadius),
+                          ),
+                        ),
+                        child: SizedBox(
+                          width: TSizes.iconLg * 1.2,
+                          height: TSizes.iconLg * 1.2,
+                          child: Center(
+                            child: Icon(
+                              Iconsax.add,
+                              color: myColors.white,
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              ),
             ),
           )
         ],
-
       ),
     );
   }

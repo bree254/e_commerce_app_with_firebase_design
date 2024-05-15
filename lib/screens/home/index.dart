@@ -1,3 +1,4 @@
+import 'package:e_commerce_firebase/screens/all_products/index.dart';
 import 'package:e_commerce_firebase/utils/constants/colors.dart';
 import 'package:e_commerce_firebase/utils/constants/image_strings.dart';
 import 'package:e_commerce_firebase/utils/constants/sizes.dart';
@@ -10,6 +11,7 @@ import 'package:e_commerce_firebase/widgets/home_widgets/home_categories_widget.
 import 'package:e_commerce_firebase/widgets/home_widgets/home_slider_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce_firebase/widgets/home_widgets/home_header_widget.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -67,6 +69,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections,),
+                  SectionHeading(title: 'Popular Products ',showActionButton: true,onPressed: () => Get.to(()=>ViewAllProductsScreen())) ,
                   GridLayoutWidget(
                     itemCount: 6,
                     itemBuilder: (BuildContext , int ) { return const VerticalProductCardWidget(); },),

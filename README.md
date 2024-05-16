@@ -29,3 +29,4 @@ samples, guidance on mobile development, and a full API reference.
     # in the scaffold add 
     bottomNavigatorBar :BottomAddToCartWidget
 
+# e_commerce_app_with_firebase_design
